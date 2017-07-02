@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Byangelrepository</title>
+<title>IziMusic</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -30,6 +30,30 @@ body, html {height: 100%}
     code <a href="https://www.facebook.com/angel.layedra.1" target="_blank">byangelc</a>
   </div>
 </div>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" href="style.css" type="text/css">
+      
+      
+        <div class="main">
+          <div class="inner">
+            <h3>Last 50 Songs Played</h3>
+            <div style="text-align:center; padding-left:10px; margin-top:20px;">
+               <!--?php
+                  $xml = @simplexml_load_file("http://mysite.com/cache/tracklist/call_api.php");
+                  if($xml){
+                   echo '<table-->';
+                     foreach ($xml-&gt;track as $value){
+                        print "".$value-&gt;title."";
+                        print $value-&gt;artists."";
+                     }
+                   echo '';
+                  }
+                  else{
+                   echo 'Error with the call_api.php!';
+                  }
+               ?&gt;
+            </div>
+          </div>
+        </div>
 </body>
 </html>
